@@ -1,0 +1,22 @@
+<% include partials/header %>
+<% startups.forEach(function(startup){ %>
+    <div class="col-6 col-md-4">    
+    
+        <div class="col py-3 px-lg-5 border bg-light">
+            <img src="<%= startup.image %>">
+        
+        <div class="caption"> 
+            <h4><%= startup.name %></h4>  
+        </div>  
+        <p>
+            <a href="/startups/<%= startup._id %>" class="btn btn-primary">more info</a>
+        </p>  
+
+        </div>
+
+    </div>       
+
+
+<%}); %>
+
+<% include partials/footer %>

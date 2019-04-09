@@ -1,0 +1,20 @@
+<% include partials/header %>
+<div class="container">
+    <div >
+        <div>
+            <h1 style="text-align:center;">define your own idea</h1>
+        </div>
+        <div style="width :30%; margin:0 auto;">
+            <form action="/startups" method="POST">
+                <input class="form-control" type="text" name="name" placeholder="name">
+                <input class="form-control" type="text" name="image" placeholder="image url">
+                <input class="form-control" type="text" name="description" placeholder="description">
+                <button class="btn btn-lg btn-default btn-block">sumbit!</button>
+                <a style="text-align:center" href="/startups">Go Back</a>
+  
+            </form> 
+        </div>    
+        
+    </div>
+</div>   
+<% include partials/footer %>
